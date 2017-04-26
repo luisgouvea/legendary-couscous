@@ -29,7 +29,6 @@ public class ConnectionDB {
 				con = DriverManager.getConnection(URL, USER, PASSWORD);
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
-				System.exit(-1);
 			}
 			return con;
 

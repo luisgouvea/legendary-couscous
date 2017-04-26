@@ -6,3 +6,6 @@ CREATE TABLE produtos
   titulo varchar2(200),
   CONSTRAINT id_produtos PRIMARY KEY (id_produtos)  
 );  
+
+
+INSERT INTO produtos (id_produtos, genero, desconto, nomeAutor, titulo) VALUES (1, "ficcao", 30, "Joao da Silva", "O viver do mundo");
