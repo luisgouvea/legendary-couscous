@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String [] args) throws FileNotFoundException, SQLException{
 		ConnectionDB connection = new ConnectionDB();
 		Connection con = connection.getConnection();
-		DAOProdutos daoProdutos = new DAOProdutos();
-		daoProdutos.executarSQL(con);
+		DAOProdutos daoProdutos = new DAOProdutos(con);
+		daoProdutos.executarSQL();
 	}
 }
