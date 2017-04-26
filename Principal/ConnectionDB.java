@@ -1,4 +1,4 @@
-package Persistencia;
+package Principal;
 import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -37,15 +37,5 @@ public class ConnectionDB {
 			// TODO: handle exception
 		}
 		return null;
-	}
-	
-	public void executarSQL(Connection con) throws SQLException{
-		String sql = "SELECT * FROM PRODUTOS";
-		Statement comando = con.createStatement();
-		try (ResultSet resultado = comando.executeQuery(sql)) {
-            while (resultado.next()) {
-                System.out.println("GENERO:" + resultado.getString("genero"));
-            }
-        }
-	}
+	}	
 }
